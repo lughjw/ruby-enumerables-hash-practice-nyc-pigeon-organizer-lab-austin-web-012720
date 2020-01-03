@@ -1,7 +1,6 @@
 def nyc_pigeon_organizer(data)
-  name_list = get_names(data).uniq
-  
   ret_hash = {}
+  name_list = get_names(data).uniq
   name_list.each do |pigeon_name|
     ret_hash[pigeon_name]=build_pigeon(pigeon_name, data)
   end
@@ -10,6 +9,7 @@ def nyc_pigeon_organizer(data)
 end
 
 def get_names(data)
+  # RETURN: all values in the arrays nested under two hashes {k,{k,[]}}
   name_list = []
   data.each_pair do |key1,value1|
     value1.each_pair do |key2,value2|
