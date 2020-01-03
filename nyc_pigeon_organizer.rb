@@ -23,7 +23,8 @@ def get_names(data)
     end
   end
   
-   puts name_list
+   # puts name_list
+   name_list
 end
 
 def get_keys_as_strings(data, parent_key)
