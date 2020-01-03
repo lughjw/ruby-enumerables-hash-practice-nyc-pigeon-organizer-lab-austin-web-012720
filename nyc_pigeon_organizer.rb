@@ -47,7 +47,7 @@ end
 def get_pigeon_data(pigeon_name, data, key)
 #  puts "looking for data on #{pigeon_name}"
   data[key].each_pair do |k,v|
-    if v.contains
+    if v.any?(pigeon_name)
   end
   
   
