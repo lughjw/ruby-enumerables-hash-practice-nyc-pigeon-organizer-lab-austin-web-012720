@@ -2,8 +2,8 @@ def nyc_pigeon_organizer(data)
   name_list = get_names(data).uniq
   
   ret_hash = {}
-  name_list.each do |pigeon|
-    ret_hash[pigeon]=build_pigeon(pigeon, data)
+  name_list.each do |pigeon_name|
+    ret_hash[pigeon_name]=build_pigeon(pigeon_name, data)
   end
   
   ret_hash
