@@ -17,7 +17,6 @@ def get_names(data)
     end
   end
   
-   # puts name_list
    name_list
 end
 
