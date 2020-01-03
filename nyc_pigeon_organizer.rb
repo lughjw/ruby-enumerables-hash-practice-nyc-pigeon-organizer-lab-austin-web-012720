@@ -21,15 +21,6 @@ def get_names(data)
    name_list
 end
 
-def get_keys_as_strings(data, parent_key)
-  ret_list = []
-  data[parent_key].each_pair do |key, value|
-    ret_list << key.to_s
-  end
-  
-  ret_list
-end
-
 def build_pigeon(pigeon_name, data)
   {
     :color => get_pigeon_data(pigeon_name, data, :color),
