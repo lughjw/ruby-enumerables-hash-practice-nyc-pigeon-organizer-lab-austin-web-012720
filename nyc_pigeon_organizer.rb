@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   name_list = get_names(data).uniq
-#  puts name_list
+  puts name_list
 #  color_list = get_keys_as_strings(data, :color).uniq
 #  lives_list = get_keys_as_strings(data, :lives).uniq
   
