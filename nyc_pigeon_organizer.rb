@@ -22,6 +22,8 @@ def get_names(data)
       name_list += value2
     end
   end
+  
+  puts name_list
 end
 
 def get_keys_as_strings(data, parent_key)
