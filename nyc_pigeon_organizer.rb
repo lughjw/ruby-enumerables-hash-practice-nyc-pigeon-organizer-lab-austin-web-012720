@@ -46,15 +46,11 @@ end
 
 def get_pigeon_data(pigeon_name, data, key)
 #  puts "looking for data on #{pigeon_name}"
-  ret = data.select do |k,v| 
-    v.select do |k1,v1|
-      v1==pigeon_name
-      k1
-    end
+  data[key].each_pair do |k,v|
+    if v.contains
   end
   
-#  pp(ret)
-  puts ret
+  
   ret
 end
 
