@@ -1,13 +1,8 @@
 def nyc_pigeon_organizer(data)
   name_list = get_names(data).uniq
-#  puts name_list
-#  color_list = get_keys_as_strings(data, :color).uniq
-#  lives_list = get_keys_as_strings(data, :lives).uniq
   
   ret_hash = {}
-# puts "Pigeon names are #{name_list}"
   name_list.each do |pigeon|
-#   puts "This pigeon is #{pigeon}"
     ret_hash[pigeon]=build_pigeon(pigeon, data)
   end
   
@@ -18,7 +13,6 @@ def get_names(data)
   name_list = []
   data.each_pair do |key1,value1|
     value1.each_pair do |key2,value2|
-#      puts "value2 is #{value2}"
       name_list += value2
     end
   end
@@ -53,7 +47,6 @@ def get_pigeon_data(pigeon_name, data, key)
     end
   end
   
-  puts "#{pigeon_name} #{key.to_s} is #{ret}"
   ret
 end
 
