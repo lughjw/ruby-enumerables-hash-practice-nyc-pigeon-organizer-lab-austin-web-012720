@@ -54,6 +54,7 @@ def get_pigeon_data(pigeon_name, data, key)
   end
   
 #  pp(ret)
+  puts ret
   ret
 end
 
