@@ -53,7 +53,7 @@ def get_pigeon_data(pigeon_name, data, key)
     end
   end
   
-  
+  puts "#{pigeon_name} #{key.to_s} is #{ret}"
   ret
 end
 
